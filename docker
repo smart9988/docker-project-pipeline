@@ -102,7 +102,7 @@ pipeline {
                 sh 'docker build -t image1 .'
             }
         }
-        
+       
         stage ("Scan image") {
             steps {
                 sh 'trivy image image1'
